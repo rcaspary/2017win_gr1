@@ -11,3 +11,21 @@
 #Do your best, show off with good, clean, well structured code - this is more important than number of features.
 #After you finish, be sure to UPLOAD this (add, commit, push) to the remote repository.
 #Good Luck
+
+#class bank:
+def client(name, surname, year, cash_amount, bank):
+	f = open(str(bank)+'.txt', 'w');
+	f.write('Name: '+str(name) + 'Surname: '+str(surname)+ 'year: '+str(year)+'cash_amount: '+str(cash_amount)+'\n')
+	f.close()
+	return surname
+
+
+print client("Anna", "Kowalski", 2017, 10000, 'bank1');
+name = input('Name: ')
+surname = input('Surname: ')
+year = input('Year: ')
+cash = input('Cash: ')
+bank = input('bank: ')
+print client(name, surname, year, cash, bank)
+print(name)
+
